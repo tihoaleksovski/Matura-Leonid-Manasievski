@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="mk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Матурска забава</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+<style>
+:root {
+  --text: #e8eef6;
+  --muted: #b9c6d6;
+}
+
+/* BACKGROUND */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(-45deg, #061428, #071a33, #0b2a55, #050f1f);
+  background-size: 400% 400%;
+  animation: gradientShift 14s ease infinite;
+  color: var(--text);
+  display: flex;
+  justify-content: center;
+  padding: 40px 16px;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* CARD */
+.card {
+  width: 100%;
+  max-width: 440px;
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.14);
+  border-radius: 26px;
+  backdrop-filter: blur(18px);
+  overflow: hidden;
+  box-shadow: 0 30px 80px rgba(0,0,0,0.6);
+}
+
+/* HERO — UPDATED IMAGE */
+.hero {
+  height: 220px;
+  background: url('https://i.imgur.com/ezBm2qL.png') center/cover no-repeat;
+}
+
+/* CONTENT */
+.content {
+  padding: 28px 24px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 22px;
+  font-weight: 500;
+  margin: 10px 0 18px;
+}
+
+.invite-text {
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--muted);
+  max-width: 92%;
+  margin: 0 auto 14px;
+  font-weight: 300;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--text);
+  margin: 6px 0 20px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 10px 0;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.material-symbols-outlined {
+  font-size: 18px;
+  color: var(--text);
+}
+
+/* BUTTONS */
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 14px auto;
+  padding: 12px 14px;
+  width: 84%;
+  border-radius: 14px;
+  text-decoration: none;
+  font-weight: 500;
+  background: rgba(255,255,255,0.92);
+  color: #0b2a55;
+  border: 1px solid rgba(11,42,85,0.6);
+  transition: all 0.25s ease;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+.button .material-symbols-outlined {
+  color: #0b2a55;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+  <div class="hero"></div>
+
+  <div class="content">
+
+    <h1>Матурска забава</h1>
+
+    <div class="invite-text">
+      Со голема радост Ве поканувам да бидете дел од матурската забава на
+    </div>
+
+    <div class="row name">
+      <span class="material-symbols-outlined">school</span>
+      Леонид Манасиевски
+    </div>
+
+    <div class="row">
+      <span class="material-symbols-outlined">calendar_month</span>
+      21.05.2026
+    </div>
+
+    <div class="row">
+      <span class="material-symbols-outlined">schedule</span>
+      18:00 ч
+    </div>
+
+    <div class="row">
+      <span class="material-symbols-outlined">location_on</span>
+      Национален Ресторан Мал Алтан
+    </div>
+
+    <a class="button"
+       href="https://maps.app.goo.gl/KFVbAop5pNjrfvD68"
+       target="_blank">
+      <span class="material-symbols-outlined">map</span>
+      Отвори локација
+    </a>
+
+    <a class="button"
+       href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Матурска+забава+-+Леонид+Манасиевски&dates=20260521T160000Z/20260521T200000Z&details=Матурска+забава&location=https://maps.app.goo.gl/KFVbAop5pNjrfvD68"
+       target="_blank">
+      <span class="material-symbols-outlined">event</span>
+      Додади во календар
+    </a>
+
+  </div>
+</div>
+
+</body>
+</html>
